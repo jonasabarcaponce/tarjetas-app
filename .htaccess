@@ -1,0 +1,7 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+# RewriteCond %{HTTPS} off
+# RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^((?!.*[\.\-\_]{2,})^[a-zA-Z0-9\.\-\_]{3,24})/?$ index.php?usuario=$1 [QSA]
+RewriteRule ^((?!.*[\.\-\_]{2,})^[a-zA-Z0-9\.\-\_]{3,24})/inicio/?$ index.php?usuario=$1 [QSA]

@@ -4,7 +4,7 @@
 
 // Switch de Producción: use true para producción, use false para desarrollo. 
 
-$production_switch = false; 
+$production_switch = true; 
 
 if ($production_switch) {
 

@@ -6,13 +6,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{ app_url }}/assets/css/main.css" />
 		<style>
-		 a {color: #003366;}a:hover, .button:hover, .button:active {color: #003366 !important;}input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus, textarea:focus, input[type="checkbox"]:focus + label:before, input[type="radio"]:focus + label:before, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, .button:active, input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, .button.primary {border-color: #003366; color: #003366!important }input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, .button.primary {background-color: #003366;}		
+		 a {color: {{ page_main_color }};}a:hover, .button:hover, .button:active {color: {{ page_main_color }} !important;}input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, select:focus, textarea:focus, input[type="checkbox"]:focus + label:before, input[type="radio"]:focus + label:before, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:hover, input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, .button:active, input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, .button.primary {border-color: {{ page_main_color }}; color: {{ page_main_color }}!important }input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, .button.primary {background-color: {{ page_main_color }};}	#header { background-image: url("{{ app_url }}/assets/css/images/overlay.png"), url("{{ cover_photo }}"); } @media screen and (max-width: 980px) { #footer { background-image: url("{{ app_url }}/assets/css/images/overlay.png"), url("{{ cover_photo }}"); } } 
 		</style>
 	</head>
 	<body class="is-preload">
 		<header id="header">
 			<div class="inner">
-				<a href="#" class="image avatar"><img src="{{ app_url }}/images/avatar.jpg" alt="" /></a>
+				<a href="#" class="image avatar"><img src="{{ profile_photo }}" alt="" /></a>
 				<h2>{{ card_introduction | raw }}</h2>
 			</div>
 		</header>
