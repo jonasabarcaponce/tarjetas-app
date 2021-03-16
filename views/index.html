@@ -40,7 +40,7 @@
 								<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Correo electrónico" autocomplete="email"/></div>
 								<div class="col-4 col-12-xsmall">
 									<select name="demo-category" id="demo-category" autocomplete="tel-country-code">
-										<option selected disabled>País</option>
+										<option disabled>País</option>
 										<option value="93">Afghanistan (+93)</option>
 										<option value="355">Albania (+355)</option>
 										<option value="213">Algeria (+213)</option>
@@ -277,9 +277,9 @@
 									</select>
 								</div>
 								<div class="col-8 col-12-xsmall">
-									<input type="text" name="name" id="name" placeholder="WhatsApp" autocomplete="tel-national"/>
+									<input type="text" name="name" id="name" placeholder="Teléfono a 10 dígitos" autocomplete="tel-national"/>
 								</div>
-								<div class="col-12"><textarea name="message" id="message" placeholder="¿En que te puedo ayudar?" rows="4"></textarea></div>
+								<div class="col-12"><textarea name="message" id="message" placeholder="¿Cómo puedo ayudarte?" rows="4"></textarea></div>
 							</div>
 						</form>
 						<ul class="actions">
@@ -310,9 +310,9 @@
 		<footer id="footer">
 			<div class="inner">
 				<ul class="icons">
-					<li><a href="#" class="icon brands fa-facebook"><span class="label">Faceook de {{ card_name }}</span></a></li>
-					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram de {{ card_name }}</span></a></li>
-					<li><a href="#" class="icon brands fa-whatsapp"><span class="label">WhatsApp de {{ card_name }}</span></a></li>
+					<li><a href="{{ facebook }}" class="icon brands fa-facebook"><span class="label">Faceook de {{ card_name }}</span></a></li>
+					<li><a href="{{ instagram }}" class="icon brands fa-instagram"><span class="label">Instagram de {{ card_name }}</span></a></li>
+					<li><a href="https://wa.me/{{ person_phone }}" class="icon brands fa-whatsapp"><span class="label">WhatsApp de {{ card_name }}</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; {{ person_name }}</li><li>Creado por: <a href="https://disenadorwebcancun.com">Diseñador Web Cancún</a></li>

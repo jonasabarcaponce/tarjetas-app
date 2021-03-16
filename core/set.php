@@ -4,12 +4,12 @@
 
 // Switch de Producción: use true para producción, use false para desarrollo. 
 
-$production_switch = true; 
+$production_switch = false; 
 
 if ($production_switch) {
 
     // Definimos la URL principal y el nombre del sitio web 
-    define('APP_URL','https://disenadorwebcancun.com/');
+    define('APP_URL','https://go.disenadorwebcancun.com');
     define('APP_NAME','Tarjeta de negocios (Modo desarrollador)');
 
     // Apagamos la capacidad de mostrar errores

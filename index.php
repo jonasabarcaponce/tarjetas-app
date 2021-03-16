@@ -42,7 +42,7 @@ if(isset($nombre_de_usuario)) {
             'app_name' => APP_NAME,
             'app_url' => APP_URL,
             'person_name' => $informacion_representante['nombre'],
-            'person_phone' => '+52'. $informacion_representante['whatsapp'],
+            'person_phone' => '52'. $informacion_representante['whatsapp'],
             'person_mail' => $informacion_representante['correo'],
             'person_address' => 'Calle Ocotepec Edfi. 250 H<br> Fracc. Puerta del Sol, <br> Cancún, México',
             'card_name' => $informacion_negocio['negocio'],
